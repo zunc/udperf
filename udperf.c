@@ -138,13 +138,13 @@ size_t send_by_bandwitdh(struct Dest *dest, size_t size, int64_t time) {
 
 static void show_help(void) {
     const char content[] = "udperf 0.1 - small tool generate UDP bandwidth for test\n" \
-		"Usage:\n" \
-		" -c, --client <host>           connecting to <host>\n" \
-		" -p, --port <port>             server port to connect to\n" \
+        "Usage:\n" \
+        " -c, --client <host>           connecting to <host>\n" \
+        " -p, --port <port>             server port to connect to\n" \
         " -b, --bandwidth <bandwidth>   test bandwidth (default = '10M')\n" \
         " -t, --time <time>             test time (default = '10' second)\n" \
-		" -h, --help                    show help\n" \
-	;
+        " -h, --help                    show help\n" \
+    ;
     printf(content);
     exit(EXIT_FAILURE);
 }
