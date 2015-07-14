@@ -220,7 +220,7 @@ void raise_bandwidth(struct Dest *dest, size_t bandwidth) {
         + (end.tv_nsec - begin.tv_nsec) / 1e3;
     readable_fs(total_sent, size_hrdr);
     readable_time(time_span, time_hrdr);
-    printf(" - total_sent=%s/%s\n", size_hrdr, time_hrdr);
+    printf(" -  total_sent=%s/%s\n", size_hrdr, time_hrdr);
     printf("[-] Raise bandwidth done\n");
 }
 
